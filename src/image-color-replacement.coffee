@@ -83,25 +83,29 @@ if angular?
 			@original = new Image()
 			if el[0].src?
 				@original.src = el[0].src
-			if scope.ngSrc?
-				@original.src = scope.ngSrc
-			if @original.src?
-				el[0].style.display = "none"
 				replace(@original,scope.colorReplace, el[0])
 
-				scope.$watchCollection 'colorReplace', (n, o)=>
+			if scope.ngSrc?
+				scope.$watch 'ngSrc', (n, o)=>
 					if n?
-						el[0].style.display = "none"
+						@original.src = scope.ngSrc
+						replace(@original,scope.colorReplace, el[0])
+
+			scope.$watch 'colorReplace', (n, o)=>
+				if n?
+					if @original.src?
 						replace(@original,n, el[0])
+			,true
 
 		replace = (original, colorReplace, el)->
+			el.classList.toggle('loading')
 			currentImage = new Image()
 			currentImage.crossOrigin = "anonymous"
 			currentImage.onload = =>
 				replacer = new ImageReplacer(currentImage)
 				replacer.replaceColors(colorReplace)
 				el.src = replacer.toDataURL()
-				el.style.display = null
+				l.classList.remove('loading')
 
 			currentImage.src = original.src
 
