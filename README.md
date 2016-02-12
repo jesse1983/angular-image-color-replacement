@@ -20,7 +20,7 @@ $scope.replace = [
 ]
 ```
 ```html
-<img src="myimage.png" replace="replace" />
+<img src="myimage.png" color-replace="replace" />
 ```
 ![alt original](https://raw.githubusercontent.com/jesse1983/angular-image-color-replacement/master/image-replaced.png)
 
@@ -32,7 +32,7 @@ $scope.replace = [
 Put on html head:
 ```html
 <script type="text/javascript" src="your_bower_components/angular/angular.min.js"></script><!-- Mandatory -->
-<script type="text/javascript" src="your_bower_components/angular-image-color-replacement/dist/angular-image-color-replacement"></script>
+<script type="text/javascript" src="your_bower_components/angular-image-color-replacement/dist/image-color-replacement"></script>
 ```
 
 Angular module:
@@ -49,7 +49,7 @@ $scope.replace = [
 ]
 ```
 
-Your view
+Your view:
 ```html
-<img src="myimage.png" replace="replace" />
+<img src="myimage.png" color-replace="replace" />
 ```
