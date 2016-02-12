@@ -5,7 +5,6 @@
     <script type="text/javascript" src="dist/image-color-replacement.js"></script>
   </head>
   <body>
-    <!-- <img id="myimage" /> -->
-    <img src="image.png" color-replace="[{from: '#FF0000', to:'#FFFF00'},{from: '#00FF00', to:'#00A4FF', tolerance: 50}]" />
+    <img ng-src="image{{'.png'}}" color-replace="[{from: '#FF0000', to:'#FFFF00'},{from: '#00FF00', to:'#00A4FF', tolerance: 50}]" />
   </body>
 </html>

@@ -9,10 +9,11 @@ gulp.task 'coffee', ->
 		.pipe coffee(bare: true)
 		.pipe uglify()
 		.pipe gulp.dest("./dist")
-		
+
 gulp.task 'watch', ->
 	gulp.watch ['./src/**/*.coffee'], ['coffee']
 
 gulp.task 'server', ->
 	connect.server
 		livereload: true
+		port: 6543

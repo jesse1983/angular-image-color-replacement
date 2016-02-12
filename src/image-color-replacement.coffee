@@ -81,13 +81,18 @@ if angular?
 	class ImageReplacerDirective
 		link = (scope, el, attr, ctrl)->
 			@original = new Image()
-			@original.src = el[0].src
-			el[0].style.display = "none"
-			replace(@original,scope.colorReplace, el[0])
-			scope.$watchCollection 'colorReplace', (n, o)=>
-				if n?
-					el[0].style.display = "none"
-					replace(@original,n, el[0])
+			if el[0].src?
+				@original.src = el[0].src
+			if scope.ngSrc?
+				@original.src = scope.ngSrc
+			if @original.src?
+				el[0].style.display = "none"
+				replace(@original,scope.colorReplace, el[0])
+
+				scope.$watchCollection 'colorReplace', (n, o)=>
+					if n?
+						el[0].style.display = "none"
+						replace(@original,n, el[0])
 
 		replace = (original, colorReplace, el)->
 			currentImage = new Image()
@@ -106,6 +111,7 @@ if angular?
 				link: link
 				scope:
 					colorReplace: "="
+					ngSrc: "@?"
 
 			return directive
 
