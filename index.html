@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html ng-app="color-replace">
+  <head>
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="dist/image-color-replacement.js"></script>
+  </head>
+  <body>
+    <!-- <img id="myimage" /> -->
+    <img src="image.png" color-replace="[{from: '#FF0000', to:'#FFFF00'},{from: '#00FF00', to:'#00A4FF', tolerance: 50}]" />
+  </body>
+</html>
