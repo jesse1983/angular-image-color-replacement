@@ -91,6 +91,7 @@ if angular?
 
 		replace = (original, colorReplace, el)->
 			currentImage = new Image()
+			currentImage.crossOrigin = "anonymous"
 			currentImage.onload = =>
 				replacer = new ImageReplacer(currentImage)
 				replacer.replaceColors(colorReplace)
