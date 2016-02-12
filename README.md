@@ -6,7 +6,7 @@ Do you like Photoshop `Replace Color` tool? Then you will like this directive!
 ```html
 <img src="myimage.png" />
 ```
-![alt original](http://girlgotfaith.com/wp-content/uploads/2015/10/wp-cloudy-simple.png)
+![alt original](https://raw.githubusercontent.com/jesse1983/angular-image-color-replacement/master/image.png)
 
 ---------------------------------------
 
@@ -22,7 +22,7 @@ $scope.replace = [
 ```html
 <img src="myimage.png" replace="replace" />
 ```
-![alt original](http://girlgotfaith.com/wp-content/uploads/2015/10/wp-cloudy-simple.png)
+![alt original](https://raw.githubusercontent.com/jesse1983/angular-image-color-replacement/master/image-replaced.png)
 
 ---------------------------------------
 
