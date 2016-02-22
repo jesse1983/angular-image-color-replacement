@@ -89,7 +89,6 @@ if angular?
 				scope.$watch 'ngSrc', (n, o)=>
 					if n?
 						@original.src = scope.ngSrc
-						replace(@original,scope.colorReplace, el[0])
 
 			scope.$watch 'colorReplace', (n, o)=>
 				if n?
@@ -105,7 +104,7 @@ if angular?
 				replacer = new ImageReplacer(currentImage)
 				replacer.replaceColors(colorReplace)
 				el.src = replacer.toDataURL()
-				l.classList.remove('loading')
+				el.classList.remove('loading')
 
 			currentImage.src = original.src
 
