@@ -1,0 +1,31 @@
+{
+  "name": "angular-image-color-replacement",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Jessé Pinheiro <jessebpinheiro@hotmail.com> (https://github.com/jesse1983)"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "https://github.com/jesse1983/angular-image-color-replacement",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.x < 2"
+  },
+  "version": "1.0.4",
+  "_release": "1.0.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.4",
+    "commit": "c18ab6f3a5d14023a1073433251ab656bd807939"
+  },
+  "_source": "https://github.com/jesse1983/angular-image-color-replacement.git",
+  "_target": "*",
+  "_originalSource": "angular-image-color-replacement"
+}

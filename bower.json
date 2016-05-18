@@ -1,0 +1,21 @@
+{
+  "name": "angular-image-color-replacement",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Jessé Pinheiro <jessebpinheiro@hotmail.com> (https://github.com/jesse1983)"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.x < 2"
+  }
+}
