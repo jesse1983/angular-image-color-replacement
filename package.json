@@ -2,7 +2,7 @@
   "name": "angular-image-color-replacement",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": "./dist/image-color-replacement.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
